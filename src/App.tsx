@@ -1,13 +1,16 @@
 import { Route, Routes } from "react-router";
 import { HomePage } from "./pages/HomePage";
-import { LoginPage } from "./pages/LoginPage";
 
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/signin" element={<LoginPage />} />
-            <Route path="/callback" element={<HomePage />} />
+            <Route index path="/" element={<HomePage />} />
+            <Route path="/explore" element={<HomePage />} />
+            <Route path="/inventory" element={<HomePage />} />
+            <Route path="/notifications" element={<HomePage />} />
+            <Route path="/profile" element={<HomePage />} />
+            {/* auth */}
+            <Route path="/signin" element={<HomePage />} />
         </Routes>
     );
 }

@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
+import App1 from "./App.tsx";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter } from "react-router";
 
@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
             }}
         >
             <BrowserRouter>
-                <App />
+                <App1 />
             </BrowserRouter>
         </Auth0Provider>
     </StrictMode>,

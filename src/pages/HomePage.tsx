@@ -1,10 +1,9 @@
-import { NavLink } from "react-router";
+import { MainLayout } from "../layout/MainLayout";
 
 export function HomePage() {
     return (
-        <div>
-            homepage
-            <NavLink to="/signin"> login</NavLink>
-        </div>
+        <>
+            <MainLayout children={<div> hello </div>} />
+        </>
     );
 }
